@@ -17,9 +17,11 @@ build:
 
 requirements:
   build:
-    - cmake
-    - make
     - {{ compiler('cxx') }}
+    - cmake
+    - make      # [not win]
+    - m2-patch  # [win]
+    - patch     # [not win]
 
 test:
   commands:
