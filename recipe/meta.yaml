@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://github.com/google/draco/archive/{{ version }}.tar.gz
+  url: https://github.com/google/{{ name }}/archive/{{ version }}.tar.gz
   sha256: 0280888e5b8e4c4fb93bf40e65e4e8a1ba316a0456f308164fb5c2b2b0c282d6
   patches:
     - start-group.patch
